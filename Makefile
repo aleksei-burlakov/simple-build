@@ -2,8 +2,8 @@ DESTDIR ?=
 PREFIX ?= /usr/local
 
 helloworld:
-	gcc main.c -o helloalex
+	g++ main.cpp -o helloalexcpp
 
 install: helloworld
 	install -m 0755 -d $(DESTDIR)$(PREFIX)/bin
-	install -m 0755 helloalex $(DESTDIR)$(PREFIX)/bin
+	install -m 0755 helloalexcpp $(DESTDIR)$(PREFIX)/bin
